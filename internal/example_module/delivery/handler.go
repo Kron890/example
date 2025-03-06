@@ -9,6 +9,7 @@ type Handler struct {
 	uc example_module.UseCase
 }
 
+// переносим данные в структуру
 func NewHandler(uc example_module.UseCase) *Handler {
 	return &Handler{
 		uc: uc,

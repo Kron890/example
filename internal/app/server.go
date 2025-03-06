@@ -25,7 +25,7 @@ func (s *Server) Start() error {
 	return s.client.ListenAndServe()
 }
 
-// добавления маршутов
+//  Регистрируем обработчик
 func (s *Server) AddHandler(path string, handler func(http.ResponseWriter, *http.Request)) {
 	s.mux.HandleFunc(path, handler)
 }
